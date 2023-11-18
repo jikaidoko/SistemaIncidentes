@@ -3,7 +3,7 @@ COMISIÓN: 006
 GRUPO: 4
 INTEGRANTES:
 Jiangjie Chen,
-Valenzuela Leandro Sealtiel Omar,
+Valenzuela Leandro, Sealtiel Omar,
 Valderrama Nandy,
 Franco Ezequiel Rivera,
 Víctor Salas,
