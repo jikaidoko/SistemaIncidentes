@@ -1,4 +1,4 @@
-package ArgentinaPrograma;
+package Main;
 
 /**
  * Hello world!

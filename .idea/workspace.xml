@@ -4,14 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2091715-11b1-4e8b-b29a-b81c97836658" name="Changes" comment="" />
+    <list default="true" id="d2091715-11b1-4e8b-b29a-b81c97836658" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/UML.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/DER.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoEnProceso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoEnProceso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoIniciado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoIniciado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoResuelto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoResuelto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Problema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Problema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Problema.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Problema.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Servicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Servicios.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Servicios.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.puml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="UML Class" />
+        <option value="UML Deployment" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Xzw4cteTdTHFMwKTuGCGakZrvY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -21,10 +58,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Deployment",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/54113/OneDrive/Documentos/Argentina Programa Java/SistemaReporteIncidentes/src/main",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\54113\OneDrive\Documentos\Argentina Programa Java\SistemaReporteIncidentes\src\main" />
+      <recent name="C:\Users\54113\OneDrive\Documentos\Argentina Programa Java\SistemaIncidentes\src\main\java\Modelos" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

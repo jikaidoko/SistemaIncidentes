@@ -1,0 +1,92 @@
+@startuml
+allowmixing
+agent RRHH
+agent AreaComercial
+agent MesaDeAyuda
+MesaDeAyuda->Incidente:ABM
+RRHH->Tecnico:ABM
+AreaComercial->Cliente:ABM
+Incidente<--Tecnico
+Cliente<--Servicios
+Cliente-->Incidente
+Incidente-->Problema
+Problema--SistemaOperativo
+Problema-->Especialidad
+Especialidad-->TecnicoDisponible
+SistemaOperativo -->TecnicoDisponible
+TecnicoDisponible-->Tecnico
+class Cliente {
+- idCliente
+- cuit
+- razonSocial
+- List <Servicios> servicioContratado
+boolean recibeServicioTecnico ()
+}
+note right of Cliente::recibeServicioTecnico
+determina si puede recibir el servicio contratado
+end note
+class Servicios {
+    -String idServicio;
+    -String nombreServicio;
+   +boolean servicioContratado()
+}
+note right of Servicios::servicioContratado
+agrega servicio contratado a la lista del cliente
+end note
+Class Incidente {
+-String id;
+-Cliente cliente;
+-List <Problema> problemaReportado;
+-SistemaOperativo os;
+-List<Tecnico> tecnicos;
+-Time tiempoMaximoResolucion;
+-Timestamp fechaInicio;
++Estado estado;
+
+}
+class Estado {
++void {abstract} cambiar estado;
+}
+Class EstadoIniciado {
++void asignarTecnico()
+}
+Class EstadoEnProceso {
+ +void asignarTiempoExtra ()
+}
+Class EstadoResuelto {
++void notificarAlCliente ()
+}
+note right of Estado:Patrón de diseño State
+Incidente-->Estado
+Estado--|>EstadoIniciado
+Estado--|>EstadoEnProceso
+Estado--|>EstadoResuelto
+EstadoIniciado-->EstadoEnProceso
+EstadoEnProceso-->EstadoResuelto
+
+Class Problema {
+-String idProblema;
+-String descripcion;
++boolean esComplejo()
+}
+enum SistemaOperativo{
+WINDOWS
+MAC_OS
+LINUX_UBUNTU
++mapTecnicosDisponibles()
+}
+Class Tecnico {
+    -String idTec;
+    -String nombre;
+    -List <Especialidad> especialidades;
++boolean tecnicoIdoneo ();
+}
+Class Especialidad {
+- List<Especialidad> especialidades;
++mapTecnicosDisponibles()
+}
+Interface TecnicoDisponible{
+@FunctionalInterface
++mapTecnicosDisponibles()
+}
+@enduml

@@ -1,27 +1,14 @@
 @startuml
-'https://plantuml.com/class-diagram
+Class Incidente {
+-String id;
+-Cliente cliente;
+-List <Problema> problemaReportado;
+-SistemaOperativo os;
+-List<Tecnico> tecnicos;
+-Time tiempoMaximoResolucion;
+-Timestamp fechaInicio;
++Estado estado;
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
-}
-
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
 }
 
 @enduml
