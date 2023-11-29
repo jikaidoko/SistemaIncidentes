@@ -1,5 +1,9 @@
 package ArgentinaPrograma;
 
+import Modelos.Cliente;
+import Modelos.Servicios;
+import Services.ServiciosService;
+
 import java.util.Scanner;
 
 /**
@@ -9,6 +13,20 @@ import java.util.Scanner;
 public class App 
 {
     public static void main( String[] args ) {
+
+        Cliente cli = new Cliente();
+
+        Servicios incidente = new Servicios();
+        incidente.setNombreServicio("Arreglo");
+        incidente.setCliente(cli);
+
+        ServiciosService ser = new ServiciosService();
+
+        ser.create(incidente); // <-- esto no funciona porque no puedo conectar con la BD
+
+        int evadir = 1;
+        if (evadir == 1){
+
 
         int opc0 = -1;
         int opc1 = -1;
@@ -100,5 +118,5 @@ public class App
 
 
 
-    }
+    }}
 }

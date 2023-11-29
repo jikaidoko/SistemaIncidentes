@@ -5,21 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2091715-11b1-4e8b-b29a-b81c97836658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/UML.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ArgentinaPrograma/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArgentinaPrograma/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/DER.puml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/Estado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoEnProceso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoEnProceso.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoIniciado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoIniciado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoResuelto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Estados/EstadoResuelto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Problema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Problema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Problema.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Problema.puml" afterDir="false" />
@@ -29,6 +32,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/UML.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/UML.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ArgentinaPrograma/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ArgentinaPrograma/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +44,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="UML Class" />
         <option value="UML Deployment" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2Xzw4cteTdTHFMwKTuGCGakZrvY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,8 +76,10 @@
     "DefaultPlantUmlFileTemplate": "UML Deployment",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/54113/OneDrive/Documentos/Argentina Programa Java/SistemaReporteIncidentes/src/main",
+    "last_opened_file_path": "F:/Users/Franco/Desktop/Hobbies/Desarrollador Java/Desarrollador Java Intermedio/example-jpa-hibernate-main",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",

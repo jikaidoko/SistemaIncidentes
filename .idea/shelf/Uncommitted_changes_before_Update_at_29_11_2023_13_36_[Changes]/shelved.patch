@@ -1,0 +1,116 @@
+Index: src/main/java/Modelos/Cliente.java
+===================================================================
+diff --git a/src/main/java/Modelos/Cliente.java b/src/main/java/Modelos/Cliente.java
+deleted file mode 100644
+--- a/src/main/java/Modelos/Cliente.java	(revision 54c1b043dd2a31a4f7c125b41facf8f205fe7140)
++++ /dev/null	(revision 54c1b043dd2a31a4f7c125b41facf8f205fe7140)
+@@ -1,8 +0,0 @@
+-package Modelos;
+-
+-public class Incidente {
+-public int id;
+-Cliente idCliente;
+-
+-
+-}
+Index: src/main/java/Modelos/Incidente.java
+===================================================================
+diff --git a/src/main/java/Modelos/Incidente.java b/src/main/java/Modelos/Incidente.java
+deleted file mode 100644
+--- a/src/main/java/Modelos/Incidente.java	(revision 54c1b043dd2a31a4f7c125b41facf8f205fe7140)
++++ /dev/null	(revision 54c1b043dd2a31a4f7c125b41facf8f205fe7140)
+@@ -1,2 +0,0 @@
+-package PACKAGE_NAME;public class Main {
+-}
+Index: src/main/java/Main/App.java
+===================================================================
+diff --git a/src/main/java/Main/App.java b/src/main/java/Main/App.java
+deleted file mode 100644
+--- a/src/main/java/Main/App.java	(revision 54c1b043dd2a31a4f7c125b41facf8f205fe7140)
++++ /dev/null	(revision 54c1b043dd2a31a4f7c125b41facf8f205fe7140)
+@@ -1,13 +0,0 @@
+-package ArgentinaPrograma;
+-
+-/**
+- * Hello world!
+- *
+- */
+-public class App 
+-{
+-    public static void main( String[] args )
+-    {
+-        System.out.println( "Hello World!" );
+-    }
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d2091715-11b1-4e8b-b29a-b81c97836658\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/ArgentinaPrograma/App.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Main/App.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Modelos/Cliente.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Modelos/Incidente.java\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 8\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2Xzw4cteTdTHFMwKTuGCGakZrvY\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d2091715-11b1-4e8b-b29a-b81c97836658\" name=\"Changes\" comment=\"\" />\r\n      <created>1699645030509</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1699645030509</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 54c1b043dd2a31a4f7c125b41facf8f205fe7140)
++++ b/.idea/workspace.xml	(date 1701206363411)
+@@ -4,10 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d2091715-11b1-4e8b-b29a-b81c97836658" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/ArgentinaPrograma/App.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="d2091715-11b1-4e8b-b29a-b81c97836658" name="Changes" comment="Menú con opciones para almacenar datos, completado solo &quot;1- Mesa de ayuda&quot;">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/Main/App.java" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" beforeDir="false" />
+@@ -50,6 +47,48 @@
+       <option name="presentableId" value="Default" />
+       <updated>1699645030509</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Menú con opciones para almacenar datos, completado solo &quot;1- Mesa de ayuda&quot;">
++      <option name="closed" value="true" />
++      <created>1701205522292</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1701205522292</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="CUSTOM_BOOLEAN_PROPERTIES">
++                <map>
++                  <entry key="Show.Git.Branches" value="false" />
++                </map>
++              </option>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Update Readme.md" />
++    <MESSAGE value="Menú con opciones para almacenar datos, completado solo &quot;1- Mesa de ayuda&quot;" />
++    <option name="LAST_COMMIT_MESSAGE" value="Menú con opciones para almacenar datos, completado solo &quot;1- Mesa de ayuda&quot;" />
++  </component>
+ </project>
+\ No newline at end of file

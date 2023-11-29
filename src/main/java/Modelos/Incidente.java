@@ -3,11 +3,12 @@ import Modelos.Estados.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.List;
 @Getter @Setter
-public class Incidente {
+public class Incidente implements Serializable {
 private String id;
 private Cliente cliente;
 private List <Problema> problemaReportado;
@@ -20,7 +21,7 @@ private Estado estado;
         this.estado = estado;
     }
     public Estado setState() {
-        final EstadoIniciado estadoIniciado = new EstadoIniciado(Incidente incidente);
+        final EstadoIniciado estadoIniciado = new EstadoIniciado(this);
         return estadoIniciado;
     }
 }

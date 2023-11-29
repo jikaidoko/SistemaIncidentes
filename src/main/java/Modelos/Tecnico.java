@@ -1,8 +1,9 @@
 package Modelos;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Tecnico {
+public class Tecnico implements Serializable {
     private String idTec;
     private String nombre;
     private List <Especialidad> especialidades;

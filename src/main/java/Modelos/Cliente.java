@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 import static javax.persistence.GenerationType.SEQUENCE;
@@ -12,7 +13,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
 @Entity
 @Table(name="Cliente")
 @Getter @Setter @NoArgsConstructor
-public class Cliente {
+public class Cliente implements Serializable {
     @Id
     @Column(name="idCliente")
     @GeneratedValue(strategy=SEQUENCE, generator="ID_SEQ")

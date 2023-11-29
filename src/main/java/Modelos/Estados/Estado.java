@@ -7,8 +7,10 @@ import lombok.Setter;
 public abstract class Estado {
     Incidente incidente;
 
-    Estado (Incidente incidente){
+    public Estado (Incidente incidente){
         this.incidente=incidente;
-}
-public abstract void enviar();
+    }
+    public Estado(){
+    }
+public abstract Estado enviar();
 }

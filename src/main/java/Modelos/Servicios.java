@@ -6,12 +6,14 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+import java.io.Serializable;
+
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
 @Table(name="Servicio")
 @Getter @Setter @NoArgsConstructor
-public class Servicios {
+public class Servicios implements Serializable {
 
     @Id
     @Column(name="idServicio")

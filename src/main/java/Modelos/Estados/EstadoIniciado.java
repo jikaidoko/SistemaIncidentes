@@ -3,18 +3,19 @@ import Modelos.*;
 
 public class EstadoIniciado extends Estado{
 
-    EstadoIniciado (Incidente incidente){
+    public EstadoIniciado(Incidente incidente){
         super(incidente);
     }
     @Override
     public Estado enviar() {
-        tecnico.asignarTecnico (new Tecnico());
-        public Estado setEstado (Incidente incidente) {
-            final EstadoEnProceso estadoEnProceso = new EstadoEnProceso(Incidente incidente);
-            return estadoEnProceso;
-        }
+        //tecnico.asignarTecnico (new Tecnico());
+        return(setEstado(super.getIncidente()));
     }
 
+    public Estado setEstado (Incidente incidente) {
+        final EstadoEnProceso estadoEnProceso = new EstadoEnProceso();
+        return estadoEnProceso;
+    }
 
 
 }
