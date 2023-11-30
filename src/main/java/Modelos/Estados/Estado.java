@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter @Setter
 public abstract class Estado {
-    Incidente incidente;
+    private Incidente incidente;
 
     public Estado (Incidente incidente){
         this.incidente=incidente;

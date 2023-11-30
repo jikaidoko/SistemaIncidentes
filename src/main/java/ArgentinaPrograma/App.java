@@ -6,11 +6,8 @@ import Services.ServiciosService;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
-public class App 
+
+public class App
 {
     public static void main( String[] args ) {
 
@@ -18,7 +15,7 @@ public class App
 
         Servicios incidente = new Servicios();
         incidente.setNombreServicio("Arreglo");
-        incidente.setCliente(cli);
+        //incidente.setCliente(cli);
 
         ServiciosService ser = new ServiciosService();
 
@@ -66,34 +63,34 @@ public class App
                             tiene contratados
                         */
 
-                        System.out.print("Ingrese razón social: ");
-                        razonSocial = sc.nextLine();
+        System.out.print("Ingrese razón social: ");
+        razonSocial = sc.nextLine();
 
-                        System.out.print("Ingrese CUIT: ");
-                        cuit = sc.nextInt();
+        System.out.print("Ingrese CUIT: ");
+        cuit = sc.nextInt();
 
-                        // Con los datos anteriores se visualiza los servicios contradados por el Cliente
+        // Con los datos anteriores se visualiza los servicios contradados por el Cliente
 
                         /*
                             El operador (de la mesa de ayuda) solicita que le informen por cuál de esos servicios desea
                             reportar un incidente, junto con una descripción del problema y el tipo del problema.
                          */
 
-                        System.out.print("Ingrese ID del servicio solicitado por el Cliente: ");
-                        idCliente = sc.nextInt();
+        System.out.print("Ingrese ID del servicio solicitado por el Cliente: ");
+        idCliente = sc.nextInt();
 
-                        System.out.print("Ingrese descripción del problema: ");
-                        descProblema = sc.nextLine();
+        System.out.print("Ingrese descripción del problema: ");
+        descProblema = sc.nextLine();
 
-                        System.out.print("Ingrese ID del problema: ");
-                        idProblema = sc.nextInt();
+        System.out.print("Ingrese ID del problema: ");
+        idProblema = sc.nextInt();
 
-                        // el sistema devuelve un listado de técnicos disponibles para resolver el problema
+        // el sistema devuelve un listado de técnicos disponibles para resolver el problema
 
                         System.out.print("Seleccionar técnico: ");
                         idTecnico = sc.nextInt();
 
-                        //Luego, informa al cliente que el incidente ha sido ingresado y la fecha posible de resolución.
+        //Luego, informa al cliente que el incidente ha sido ingresado y la fecha posible de resolución.
 
                         /*
                             Al confirmarse el incidente, el sistema debe enviar una notificación al técnico informándole
@@ -119,4 +116,4 @@ public class App
 
 
     }}
-}
+    }

@@ -12,19 +12,19 @@ import java.util.List;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
-@Table(name="Problema")
+@Table(name="problema")
 @Getter @Setter @NoArgsConstructor
 public class Problema implements Serializable {
    @Id
-   @Column(name="idProblema")
+   @Column(name="id_problema")
    @GeneratedValue(strategy=SEQUENCE, generator="ID_SEQ")
    private String idProblema;
 
    @Column(name = "descripcion")
    private String descripcion;
 
-   @ManyToMany(mappedBy = "especialidades")
-   private List<Especialidad> especialidads;
+   @ManyToMany(mappedBy = "problemas")
+   private List<Especialidad> especialidades;
 
 
    SistemaOperativo os;

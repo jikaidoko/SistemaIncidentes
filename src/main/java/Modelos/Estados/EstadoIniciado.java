@@ -8,7 +8,6 @@ public class EstadoIniciado extends Estado{
     }
     @Override
     public Estado enviar() {
-        //tecnico.asignarTecnico (new Tecnico());
         return(setEstado(super.getIncidente()));
     }
 

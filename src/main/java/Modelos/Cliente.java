@@ -11,11 +11,11 @@ import java.util.List;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
-@Table(name="Cliente")
+@Table(name="cliente")
 @Getter @Setter @NoArgsConstructor
 public class Cliente implements Serializable {
     @Id
-    @Column(name="idCliente")
+    @Column(name="id_cliente")
     @GeneratedValue(strategy=SEQUENCE, generator="ID_SEQ")
     private int idCliente;
 
@@ -25,8 +25,11 @@ public class Cliente implements Serializable {
     @Column(name="razonSocial")
     private String razonSocial;
 
-    @OneToMany (mappedBy = "Servicios")
+    @OneToMany (mappedBy = "cliente")
     List <Servicios> servicioContratado;
+
+    @OneToMany (mappedBy = "cliente")
+    List <Incidente> incidentes;
 
     public boolean recibeServicioTecnico() {
           return true;

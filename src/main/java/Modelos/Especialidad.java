@@ -11,20 +11,20 @@ import java.util.List;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
-@Table(name="Especialidad")
+@Table(name="especialidad")
 @Getter @Setter @NoArgsConstructor
 public class Especialidad implements Serializable {
     @Id
-    @Column(name="idEspecialidad")
+    @Column(name="id_especialidad")
     @GeneratedValue(strategy=SEQUENCE, generator="ID_SEQ")
     private int idEspecialidad;
 
-    @Column(name="nombreEspecialidad")
+    @Column(name="nombre_especialidad")
     private String nombreEspecialidad;
 
     @ManyToMany
     @JoinTable(name = "problema_especialidad",
-            joinColumns = @JoinColumn(name = "idEspecialidad"),
-            inverseJoinColumns = @JoinColumn(name = "idProblema"))
+            joinColumns = @JoinColumn(name = "id_especialidad"),
+            inverseJoinColumns = @JoinColumn(name = "id_problema"))
     private List<Problema> problemas;
 }
