@@ -11,7 +11,7 @@ import java.util.List;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
-@Table(name="especialidad")
+@Table(name="Especialidad")
 @Getter @Setter @NoArgsConstructor
 public class Especialidad implements Serializable {
     @Id
@@ -23,8 +23,14 @@ public class Especialidad implements Serializable {
     private String nombreEspecialidad;
 
     @ManyToMany
-    @JoinTable(name = "problema_especialidad",
-            joinColumns = @JoinColumn(name = "id_especialidad"),
-            inverseJoinColumns = @JoinColumn(name = "id_problema"))
-    private List<Problema> problemas;
+    @JoinTable(name = "tipo_problema_especialidad",
+            joinColumns = @JoinColumn(name = "especialidad_id"),
+            inverseJoinColumns = @JoinColumn(name = "tipo_problema_id"))
+    private List<TipoDeProblema> tipoDeProblemas;
+
+    @ManyToMany
+    @JoinTable(name = "tecnico_especialidad",
+            joinColumns = @JoinColumn(name = "especialidad_id"),
+            inverseJoinColumns = @JoinColumn(name = "tecnico_id"))
+    private List<Tecnico> tecnicos;
 }

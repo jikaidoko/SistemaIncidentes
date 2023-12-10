@@ -1,22 +1,22 @@
 package Services;
 
 import DAO.ServiciosDAO;
-import Modelos.Servicios;
+import Modelos.Servicio;
 
 import java.util.List;
 
 public class ServiciosService {
     private ServiciosDAO dao = new ServiciosDAO();
 
-    public void create(Servicios entity){
+    public void create(Servicio entity){
         dao.create(entity);
     }
 
-    public Servicios findOne(int id) {
+    public Servicio findOne(int id) {
         return dao.findOne(id);
     }
 
-    public List<Servicios> findAll() {
+    public List<Servicio> findAll() {
         return dao.findAll();
     }
 }

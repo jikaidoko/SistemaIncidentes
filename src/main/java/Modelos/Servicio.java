@@ -7,13 +7,14 @@ import lombok.Setter;
 import javax.persistence.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
-@Table(name="servicio")
+@Table(name="Servicio")
 @Getter @Setter @NoArgsConstructor
-public class Servicios implements Serializable {
+public class Servicio implements Serializable {
 
     @Id
     @Column(name="id_servicio")
@@ -23,9 +24,18 @@ public class Servicios implements Serializable {
     @Column(name="nombre_servicio")
     private String nombreServicio;
 
-    @ManyToOne
-    @JoinColumn(name="cliente_id", referencedColumnName="id_cliente")
-    private Cliente cliente;
+    @Column(name="descripcion")
+    private String descripcion;
+
+    @OneToMany (mappedBy = "cliente")
+    List<ProvisionDeServicio> servicioContratado;
+
+    @ManyToMany
+    @JoinTable(name = "Tipo_problema_x_servicios",
+            joinColumns = @JoinColumn(name = "servicios_id"),
+            inverseJoinColumns = @JoinColumn(name = "tipo_problema_id"))
+    private List<TipoDeProblema> tipoDeProblemas;
+
     public boolean servicioContratado(Cliente cliente){
         return true;
     }

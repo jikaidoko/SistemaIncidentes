@@ -1,0 +1,105 @@
+@startuml
+hide spot
+hide circle
+skinparam linetype ortho
+
+
+entity Incidente {
+*ID: Long id_incidente <<PK>>
+*tecnico_id: Long <<FK>>
+*prov_servicio_id: Long <<FK>>
+*problema_id: Long<<FK>>
+--
+max_tiempo_resolucion: DateTime
+fecha_inicio: DateTime
+fecha_cierre: DateTime
+}
+entity Problema{
+*ID: Long id_problema <<PK>>
+*incidente_id Long <<FK>>
+*tipo_problema_id: Long <<FK>>
+--
+descripcion: Varchar(255)
+tiempo_est_resolucion: DateTime
+}
+entity Tecnico {
+*ID: id_tecnico Long <<PK>>
+--
+nombre: Varchar (30)
+apellido: Varchar (30)
+fechaDeNacimiento: DateTime
+telefono: Varchar (20)
+email: Varchar (30)
+}
+entity Tecnico_x_Especialidad {
+*tecnico_id_id: Long <<FK>>
+*especialidad_id: Long <<FK>>
+}
+entity Especialidad {
+*ID: id_especialidad Long <<PK>>
+--
+nombre_especialidad
+}
+entity Tipo_Problema_x_Especialidad{
+*especialidad_id: Long <<FK>>
+*tipo_problema_id: Long <<FK>>
+}
+entity ProvisionDeServicio {
+*ID: Long id_prov_servicio<<PK>>
+*servicio_id: Long <<FK>>
+*cliente_id: Long <<FK>>
+--
+fecha_alta: DateTime
+pago_mensual: Double
+}
+entity Cliente {
+*ID: Long <<PK>>
+--
+telefono: Varchar (20)
+email: Varchar (255)
+cuit: char (11)
+razon_social: Varchar (255)
+}
+entity Servicios {
+*ID: id_servicio Long <<PK>>
+--
+nombre_servicio: Varchar (255)
+descripcion: Varchar (255)
+}
+entity Tipo_Problema_x_Servicios{
+*servicios_id: Long <<FK>>
+*tipo_problema_id: Long <<FK>>
+}
+entity Tipo_de_Problema{
+*ID: id_tipo_problema Long <<PK>>
+--
+nombre_problema: Varchar(255)
+descripcion: Varchar(255)
+tiempo_max_resolucion: DateTime
+}
+entity Mensaje_de_Notificacion{
+*ID:id_Notificacion Long <<PK>>
+*cliente_id Long <<FK>>
+*tecnico_id Long <<FK>>
+*incidente_id Long <<FK>>
+--
+fecha_de_creacion: DateTime
+titulo: Varchar (255)
+texto: Varchar (255)
+}
+Problema}|-||Incidente
+Problema}|--||Tipo_de_Problema
+Incidente }|--||ProvisionDeServicio
+Incidente}|--||Tecnico
+Tecnico}|--|{Tecnico_x_Especialidad
+Tecnico_x_Especialidad}|--|{Especialidad
+ProvisionDeServicio}|--||Cliente
+ProvisionDeServicio}|--||Servicios
+Servicios}|-|{Tipo_Problema_x_Servicios
+Tipo_Problema_x_Servicios}|--|{Tipo_de_Problema
+Tipo_Problema_x_Especialidad}|--|{Especialidad
+Tipo_de_Problema}|--|{Tipo_Problema_x_Especialidad
+Incidente||--|{Mensaje_de_Notificacion
+Cliente||--|{Mensaje_de_Notificacion
+Tecnico||--|{Mensaje_de_Notificacion
+@enduml

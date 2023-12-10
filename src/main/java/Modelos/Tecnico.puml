@@ -1,8 +1,0 @@
-@startuml
-Class Tecnico {
-    -String idTec;
-    -String nombre;
-    -List <Especialidad> especialidades;
-+boolean tecnicoIdoneo ();
-}
-@enduml

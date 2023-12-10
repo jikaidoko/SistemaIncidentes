@@ -9,7 +9,7 @@
 
         <!-- Clases de entidad -->
         <class>SistemaIncidentes.Modelos.Cliente</class>
-        <class>SistemaIncidentes.Modelos.Servicios</class>
+        <class>SistemaIncidentes.Modelos.Servicio</class>
         <class>SistemaIncidentes.Modelos.Especialidad</class>
         <class>SistemaIncidentes.Modelos.Problema</class>
         <class>SistemaIncidentes.Modelos.SistemaOperativo</class>

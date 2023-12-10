@@ -1,9 +1,9 @@
 package DAO;
 
-import Modelos.Servicios;
+import Modelos.Servicio;
 
-public class ServiciosDAO extends AbstractJpaDAO<Servicios> {
+public class ServiciosDAO extends AbstractJpaDAO<Servicio> {
     public ServiciosDAO(){
-        setClazz(Servicios.class);
+        setClazz(Servicio.class);
     }
 }

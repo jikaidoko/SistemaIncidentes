@@ -7,33 +7,55 @@ MesaDeAyuda->Incidente:ABM
 RRHH->Tecnico:ABM
 AreaComercial->Cliente:ABM
 Incidente<--Tecnico
-Cliente<--Servicios
-Cliente-->Incidente
+Cliente<--Servicio
+Cliente-->MensajeDeNotificacion
+MensajeDeNotificacion-->Incidente
+MensajeDeNotificacion-->CanalDeNotificacion
+CanalDeNotificacion<|..EnvioEmail
+CanalDeNotificacion<|..EnvioWhatsapp
+Tecnico->CanalDeNotificacion
 Incidente-->Problema
-Problema--SistemaOperativo
+Incidente->ProvisionDeServicio
+ProvisionDeServicio-->Cliente
+ProvisionDeServicio-->Servicio
 Problema-->Especialidad
 Especialidad-->TecnicoDisponible
-SistemaOperativo -->TecnicoDisponible
 TecnicoDisponible-->Tecnico
 class Cliente {
 - idCliente
 - cuit
 - razonSocial
 - List <Servicios> servicioContratado
-boolean recibeServicioTecnico ()
 }
-note right of Cliente::recibeServicioTecnico
+note right of ProvisionDeServicio::recibeServicioTecnico
 determina si puede recibir el servicio contratado
 end note
-class Servicios {
+class Servicio {
     -String idServicio;
     -String nombreServicio;
-   +boolean servicioContratado()
+   +servicioContratado()
 }
-note right of Servicios::servicioContratado
+note right of Servicio::servicioContratado
 agrega servicio contratado a la lista del cliente
 end note
-Class Incidente {
+class MensajeDeNotificacion {
+-LocalDate fechaDeCreacion;
+-String titulo;
+-String texto;
+-Incidente incidente;
+public boolean enviado ()
+public void mensajeDeNotificacion ()
+}
+interface CanalDeNotificacion {
+              public static void enviar_notificacion()
+          }
+class EnvioEmail{
+    public void enviar_notificacion()
+}
+class EnvioWhatsapp {
+    public void enviar_notificacion()
+}
+class Incidente {
 -String id;
 -Cliente cliente;
 -List <Problema> problemaReportado;
@@ -41,19 +63,26 @@ Class Incidente {
 -List<Tecnico> tecnicos;
 -Time tiempoMaximoResolucion;
 -Timestamp fechaInicio;
+-Timestamp fechaCierre;
 +Estado estado;
-
+}
+class ProvisionDeServicio {
+ -List<Servicio> servicioContratado;
+ -Cliente cliente;
+ -fechaDeAlta;
+ -pagoMensual;
+ boolean recibeServicioTecnico ()
 }
 class Estado {
 +void {abstract} cambiar estado;
 }
-Class EstadoIniciado {
+class EstadoIniciado {
 +void asignarTecnico()
 }
-Class EstadoEnProceso {
+class EstadoEnProceso {
  +void asignarTiempoExtra ()
 }
-Class EstadoResuelto {
+class EstadoResuelto {
 +void notificarAlCliente ()
 }
 note right of Estado:Patrón de diseño State
@@ -63,29 +92,30 @@ Estado--|>EstadoEnProceso
 Estado--|>EstadoResuelto
 EstadoIniciado-->EstadoEnProceso
 EstadoEnProceso-->EstadoResuelto
-
-Class Problema {
+EstadoResuelto->CanalDeNotificacion
+class Problema {
 -String idProblema;
 -String descripcion;
 +boolean esComplejo()
++void asignarTecnico()
 }
-enum SistemaOperativo{
-WINDOWS
-MAC_OS
-LINUX_UBUNTU
-+mapTecnicosDisponibles()
-}
-Class Tecnico {
+class Tecnico {
     -String idTec;
     -String nombre;
+    -String apellido;
+    -LocalDate fechaDeNacimiento;
+    -String telefono;
+    -String email;
+    -List <MensajeDeNotificacion> mensajes;
     -List <Especialidad> especialidades;
+    +boolean tecnicoDisponible();
 +boolean tecnicoIdoneo ();
 }
-Class Especialidad {
+class Especialidad {
 - List<Especialidad> especialidades;
 +mapTecnicosDisponibles()
 }
-Interface TecnicoDisponible{
+interface TecnicoDisponible{
 @FunctionalInterface
 +mapTecnicosDisponibles()
 }

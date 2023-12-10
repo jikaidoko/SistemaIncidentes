@@ -1,8 +1,0 @@
-@startuml
-
-class Especialidad {
- -int idEspecialidad
- -String nombreEspecialidad
- - List<Problema> problemas;
-         }
-@enduml

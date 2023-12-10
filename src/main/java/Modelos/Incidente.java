@@ -13,7 +13,7 @@ import java.util.List;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
-@Table(name="incidente")
+@Table(name="Incidente")
 @Getter @Setter @NoArgsConstructor
 public class Incidente implements Serializable {
     @Id
@@ -32,14 +32,20 @@ public class Incidente implements Serializable {
     @ManyToMany
     private List<Tecnico> tecnicos;
 
-    @Column(name="max_tiempo")
+    @Column(name="max_tiempo_resolucion")
     private Time tiempoMaximoResolucion;
 
     @Column(name="fecha_inicio")
     private Timestamp fechaInicio;
 
+    @Column(name="fecha_cierre")
+    private Timestamp fechaCierre;
+
     @Transient
     private Estado estado;
+
+    @OneToMany (mappedBy = "incidente")
+    private List<MensajeDeNotificacion> mensajes;
 
     public void cambiarEstado (Estado estado) {
         this.estado = estado;

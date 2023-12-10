@@ -11,7 +11,7 @@ import java.util.List;
 import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
-@Table(name="cliente")
+@Table(name="Cliente")
 @Getter @Setter @NoArgsConstructor
 public class Cliente implements Serializable {
     @Id
@@ -26,7 +26,7 @@ public class Cliente implements Serializable {
     private String razonSocial;
 
     @OneToMany (mappedBy = "cliente")
-    List <Servicios> servicioContratado;
+    List <ProvisionDeServicio> servicioContratado;
 
     @OneToMany (mappedBy = "cliente")
     List <Incidente> incidentes;

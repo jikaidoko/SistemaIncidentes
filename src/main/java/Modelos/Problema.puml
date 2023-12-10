@@ -1,7 +1,0 @@
-@startuml
-Class Problema {
--String idProblema;
--String descripcion;
-+boolean esComplejo()
-}
-@enduml
