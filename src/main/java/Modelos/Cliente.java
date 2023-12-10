@@ -29,7 +29,9 @@ public class Cliente implements Serializable {
     List <ProvisionDeServicio> servicioContratado;
 
     @OneToMany (mappedBy = "cliente")
-    List <Incidente> incidentes;
+    private List<MensajeDeNotificacion> mensajes;
+
+
 
     public boolean recibeServicioTecnico() {
           return true;

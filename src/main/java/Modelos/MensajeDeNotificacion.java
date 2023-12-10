@@ -31,6 +31,15 @@ public class MensajeDeNotificacion {
     @ManyToOne
     @JoinColumn(name="incidente_id", referencedColumnName="id_incidente")
     Incidente incidente;
+
+    @ManyToOne
+    @JoinColumn(name="tecnico_id", referencedColumnName="id_tecnico")
+    Tecnico tecnico;
+
+    @ManyToOne
+    @JoinColumn(name="cliente_id", referencedColumnName="id_cliente")
+    Cliente cliente;
+
     public boolean enviado (){
         return true;
     }

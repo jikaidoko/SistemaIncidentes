@@ -22,14 +22,14 @@ public class Incidente implements Serializable {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name="cliente_id", referencedColumnName="id_cliente")
-    private Cliente cliente;
+    @JoinColumn(name="prov_servicio_id", referencedColumnName="id_prov_servicio")
+    private ProvisionDeServicio provisionDeServicio;
 
     @OneToMany
     @JoinColumn(name="problema_id", referencedColumnName="id_incidente")
     private List <Problema> problemas;
 
-    @ManyToMany
+    @ManyToMany (mappedBy = "incidentes")
     private List<Tecnico> tecnicos;
 
     @Column(name="max_tiempo_resolucion")

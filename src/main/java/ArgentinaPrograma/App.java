@@ -22,7 +22,6 @@ public class App
         ser.create(incidente); // <-- esto no funciona porque no puedo conectar con la BD
 
         int evadir = 1;
-        /*
         if (evadir == 1){
 
 
@@ -63,7 +62,6 @@ public class App
                             CUIT) y los ingresa en el sistema para que el mismo le muestre los servicios que el cliente
                             tiene contratados
                         */
- /*
         System.out.print("Ingrese razón social: ");
         razonSocial = sc.nextLine();
 
@@ -76,7 +74,7 @@ public class App
                             El operador (de la mesa de ayuda) solicita que le informen por cuál de esos servicios desea
                             reportar un incidente, junto con una descripción del problema y el tipo del problema.
                          */
- /*
+
         System.out.print("Ingrese ID del servicio solicitado por el Cliente: ");
         idCliente = sc.nextInt();
 
@@ -97,7 +95,7 @@ public class App
                             Al confirmarse el incidente, el sistema debe enviar una notificación al técnico informándole
                             que tiene un nuevo incidente para resolver.
                          */
- /*
+
                     }
 
                     if(opc1 == 2){
@@ -116,5 +114,5 @@ public class App
 
 
 
-    }*/}
+    }}
     }

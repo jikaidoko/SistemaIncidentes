@@ -4,37 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2091715-11b1-4e8b-b29a-b81c97836658" name="Changes" comment="Nuevo commit con arquitectura de persistencia JPA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/CanalDeNotificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/DER.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/EnvioEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/EnvioWhatsapp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/MensajeDeNotificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/ProvisionDeServicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/TecnicoDisponible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelos/TipoDeProblema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2023_13_36_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_11_2023_13_36__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d2091715-11b1-4e8b-b29a-b81c97836658" name="Changes" comment="Nuevas clases y diagrama DER">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ArgentinaPrograma/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArgentinaPrograma/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ServiciosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ServiciosDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Cliente.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Especialidad.puml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Incidente.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Problema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Problema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Problema.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Servicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Servicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Servicios.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/SistemaOperativo.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/MensajeDeNotificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/MensajeDeNotificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/ProvisionDeServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/ProvisionDeServicio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/Tecnico.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelos/UML.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelos/UML.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/ServiciosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/ServiciosService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,19 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Sequence&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/54113/OneDrive/Documentos/Argentina Programa Java/SistemaReporteIncidentes/src/main/java/Modelos&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/54113/OneDrive/Documentos/Argentina Programa Java/java intermedio",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Modelos" />
@@ -142,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701349163020</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Nuevas clases y diagrama DER">
+      <created>1702229503517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702229503517</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nuevo commit con arquitectura de persistencia JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nuevo commit con arquitectura de persistencia JPA" />
+    <MESSAGE value="Nuevas clases y diagrama DER" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevas clases y diagrama DER" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -43,6 +43,9 @@ public class Tecnico implements Serializable {
             joinColumns = @JoinColumn(name = "tecnico_id"),
             inverseJoinColumns = @JoinColumn(name = "incidente_id"))
     private List <Incidente> incidentes;
+
+    @OneToMany (mappedBy = "tecnico")
+    private List<MensajeDeNotificacion> mensajes;
     public boolean tecnicoIdoneo(){
         return true;
     }
